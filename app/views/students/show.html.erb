@@ -1,0 +1,18 @@
+
+<body>
+  <div class="container">
+    <h1>Surname: <%= @student.surname %></h1>
+
+
+    <p>School:  <%= @student.school %></p>
+    <p>Grade: <%= @student.grade %></p>
+    <p>Place: <%= @student.place %></p>
+
+
+    <h2><%= link_to "Edit", edit_student_path(@student) %></h2>
+      <h2><%= link_to "Destroy", student_path(@student),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" } %></h2>
+      <h2><%= link_to "Home", "/"%></h2>
+  </div>
+</body>
