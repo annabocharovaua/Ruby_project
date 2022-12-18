@@ -1,0 +1,68 @@
+<%= stylesheet_link_tag 'students.css' %>
+
+<body>
+    <div class="container">
+      <h1><%= link_to "New student", new_student_path %></h1>
+
+
+      <h1>Students</h1>
+
+    <table>
+      <tr>
+        <th>Surname</th>
+        <th>School</th>
+        <th>Grade</th>
+        <th>Place</th>
+
+      </tr>
+      <% @students.each do |student| %>
+        <tr>
+          <th><%= link_to student.surname, student%></th>
+          <th><%= student.school%></th>
+          <th><%= student.grade%></th>
+          <th><%= student.place%></th>
+        </tr>
+      <% end %>
+    </table>
+
+    <h1>Schools with prize places</h1>
+    <table>
+      <% @prize_schools.each do |student| %>
+        <tr>
+          <th><%= student.school %></th>
+        </tr>
+      <% end %>
+    </table>
+
+    <h1>Most successful schools</h1>
+    <table>
+      <tr>
+        <th>School</th>
+        <th>Total prizes</th>
+      </tr>
+      <% @most_successful_school.each do |student| %>
+        <tr>
+          <th><%= student.school %></th>
+          <th><%= student.total_prize %></th>
+        </tr>
+      <% end %>
+    </table>
+
+    <h1>First place winners</h1>
+    <table>
+      <tr>
+        <th>Surname</th>
+        <th>School</th>
+        <th>Grade</th>
+      </tr>
+      <% @winners.each do |student| %>
+        <tr>
+          <th><%= student.surname %></th>
+          <th><%= student.school %></th>
+          <th><%= student.grade %></th>
+        </tr>
+      <% end %>
+    </table>
+
+    </div>
+</body>
