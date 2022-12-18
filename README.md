@@ -1,23 +1,24 @@
-# Ruby_ptoject
-Використати де доцільно:
-Спадкування: методи super і method_missing
-Поліморфізм: перевизначення методів нащадками
-Інтерфейс: публічні методи об'єкта
-Модулі - поставщики методів.
-Домішки і include.
-Написати приклад коду, який використовує всі три особливості ООП: поліморфізм, інкапсуляцію і успадкування.
+# README
 
-Автоматизоване тестування TDD, BDD RSpec
-покрити тестами функції, використовуючи Cucumber
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Web-фреймворк Ruby on Rails
-Rails Models
-Створити нову базу даних (Postgresql, MySql,...) і підключити її до власного проекту.
-Моделі і форми використати взаємозв'язки між моделями і БД
-has_one, has_many, belongs_to
-Rails Controllers
-Реалізувати контролер CRUD (REST).
-Rails Views
-Підключити до проекту Twitter Bootstrap.
+Things you may want to cover:
 
-Локалізація Rails-додатків i18n і l10n.
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
